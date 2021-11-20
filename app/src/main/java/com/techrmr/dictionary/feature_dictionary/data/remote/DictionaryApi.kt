@@ -11,4 +11,8 @@ interface DictionaryApi {
         @Path("word") word: String
     ): List<WordInfoDTO>
 
+
+    companion object {
+        const val BASE_URL = "https://api.dictionaryapi.dev/"
+    }
 }
